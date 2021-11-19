@@ -44,7 +44,7 @@ h6 {
   font-size: inherit;
 }
 ._container {
-  max-width: 1010px;
+  max-width: 989px;
   margin: 0 auto;
   padding: 0 1.5rem;
   box-sizing: content-box;
@@ -188,12 +188,6 @@ img {
   box-sizing: content-box;
   position: relative;
 }
-.takecare__container::after {
-  content: url(../img/takecare/background-img.png);
-  position: absolute;
-  top: 0;
-  right: -3.4rem;
-}
 .takecare__body {
   padding: 16rem 1.5rem 5.5rem 2.5rem;
   position: relative;
@@ -209,9 +203,6 @@ img {
 .takecare__header {
   padding: 8rem 1rem 8rem 0rem;
 }
-.color-blue {
-  color: #4285f4;
-}
 /* .takecare__img {
   width: 100%;
 }
@@ -219,17 +210,17 @@ img {
   width: 100%;
 } */
 .takecare__img {
-  position: relative;
+  /* position: relative; */
   padding: 0 53.107% 38.294% 0;
 }
-.takecare__img img {
+/* .takecare__img img {
   position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
   object-fit: cover;
-}
+} */
 .takecare__watchvideo {
 }
 .watchvideo {
@@ -254,14 +245,6 @@ img {
   line-height: 126%;
   letter-spacing: 0.165em;
 }
-/* .takecare__background-img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 787px;
-  left: calc(100% - 25.5rem);
-} */
 
 @media (max-width: 802px) {
   .takecare__content {
@@ -285,5 +268,66 @@ img {
 @media (max-width: 564px) {
   .takecare__header {
     padding: 10rem 0 4rem 0;
+  }
+}
+@media (min-width: 802px) {
+  .takecare__container::after {
+    content: url(../img/takecare/background-img.png);
+    position: absolute;
+    top: 0;
+    right: -3.4rem;
+  }
+}
+
+/* main__staysafe ---------------------------------------------------------- */
+.main__staysafe {
+}
+.staysafe {
+  padding: 13.5rem 0 10.6rem 0;
+  /* background: url(../img/staysafe/img-background.png) 43.5rem no-repeat; */
+}
+.staysafe__container {
+}
+.staysafe__body {
+  display: flex;
+  align-items: center;
+}
+.staysafe__img {
+  /* padding: 0 23.15% 47.63% 0; */
+}
+.staysafe__img img {
+  position: relative;
+  z-index: 5;
+}
+.staysafe__header {
+  padding: 0 0 0 18rem;
+}
+
+@media (max-width: 1090px) {
+  .staysafe__header {
+    padding: 0 0 0 6rem;
+  }
+}
+@media (max-width: 802px) {
+  .staysafe {
+    padding: 5rem 0 3rem 0;
+  }
+  .staysafe__body {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .staysafe__header {
+    padding: 0 0 3rem 0rem;
+  }
+}
+@media (min-width: 860px) {
+  .staysafe__img::after {
+    content: url(../img/staysafe/img-background.png);
+    position: absolute;
+    top: -3rem;
+    left: -4rem;
+  }
+  .staysafe__header {
+    max-width: 54rem;
   }
 }
